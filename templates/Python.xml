@@ -1,0 +1,36 @@
+<templateSet group="Python">
+  <template name="hparams" value="class HParams(tb.HyperParam):&#10;    def __init__(self):&#10;        super(HParams, self).__init__()&#10;        # ==================== Enviroment ========================&#10;        self.exp_name = 'default'&#10;        self.root = 'tmp'&#10;        self._code = None&#10;        self.pkg = None&#10;        # self.device = config_device(HyperParam, Device.gpu0)&#10;        # ===================== DATA ============================&#10;        self.seed = 234&#10;        # ===================== Model =============================&#10;        # ===================== Training ========================&#10;        self.split = 0.2&#10;        self.lr = 0.0005&#10;        self.batch_size = 32&#10;        self.epochs = 30" description="Construct a template for hyperparameters" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="imp" value="import numpy as np&#10;import matplotlib.pyplot as plt&#10;import crocodile.toolbox as tb" description="import basic libraries" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="reload" value="import importlib&#10;importlib.reload(" description="Reload a module" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="glob" value="tb.Experimental.run_globally(func=$func$, self=$self$))$END$" description="Executes code from function" toReformat="false" toShortenFQNames="true">
+    <variable name="func" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="self" expression="" defaultValue="None" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="defaults" value="*args, **kwargs" description="args kwargs" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="pathtemplate" value="dat = tb.P(r&quot;$VAR$&quot;).readit($arg$)" description="Generates path template" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="arg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
