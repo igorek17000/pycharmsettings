@@ -1,0 +1,14 @@
+<application>
+  <component name="FileTypeManager" version="18">
+    <ignoreFiles list="*$py.class;*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.hg;.svn;CVS;__pycache__;_svn;vssver.scc;vssver2.scc" />
+    <extensionMap>
+      <mapping pattern="todo" type="AUTO_DETECTED" />
+      <mapping pattern="alternative" type="AUTO_DETECTED" />
+      <mapping ext="config" type="PLAIN_TEXT" />
+      <removed_mapping ext="config" approved="true" type="XML" />
+      <removed_mapping ext="md" approved="true" type="XML" />
+      <removed_mapping ext="permissionset" approved="true" type="XML" />
+      <removed_mapping ext="profile" approved="true" type="XML" />
+    </extensionMap>
+  </component>
+</application>
